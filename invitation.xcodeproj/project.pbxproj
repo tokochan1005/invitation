@@ -47,7 +47,7 @@
 		60B253C2288D8E6B004AAF74 /* invitationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invitationUITests.swift; sourceTree = "<group>"; };
 		60B253C4288D8E6B004AAF74 /* invitationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invitationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6522E980288E63FF002D5404 /* PageEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageEdit.swift; sourceTree = "<group>"; };
-		6522E982288E650F002D5404 /* PageSend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSend.swift; sourceTree = "<group>"; };
+		6522E982288E650F002D5404 /* PageSend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSend.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
