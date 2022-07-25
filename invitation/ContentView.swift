@@ -13,7 +13,7 @@ struct ContentView: View {
         VStack {
             TabBarView(selectedTab: $selectedTab)
             TabView (selection: $selectedTab) {
-                PageView(text: "ホーム")
+                PageView(text: "ホームdesu")
                     .tag(1)
                 PageView(text: "編集")
                     .tag(2)
