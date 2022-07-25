@@ -13,11 +13,11 @@ struct ContentView: View {
         VStack {
             TabBarView(selectedTab: $selectedTab)
             TabView (selection: $selectedTab) {
-                PageView(text: "ホーム")
+                PageHome()
                     .tag(1)
-                PageView(text: "編集")
+                PageEdit()
                     .tag(2)
-                PageView(text: "送る")
+                PageSend()
                     .tag(3)
             }
         }
@@ -31,23 +31,31 @@ struct TabBarView : View {
             Spacer()
             VStack {
                 Image(systemName: "house")
-                    .foregroundColor(Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
+                    .foregroundColor(
+                        selectedTab == 1 ? Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411)
+                        : Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
                 Text("ホーム")
                     .fontWeight(.heavy)
-                    .foregroundColor(Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
+                    .foregroundColor(
+                        selectedTab == 1 ? Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411)
+                        : Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
+                    
             }
-            .foregroundColor(selectedTab == 1 ? Color.blue : Color.gray)
             .onTapGesture {
                 self.selectedTab = 1
             }
             Spacer()
             VStack {
                 Image(systemName: "pencil.circle")
-                    .foregroundColor(Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
+                    .foregroundColor(
+                        selectedTab == 2 ? Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411)
+                        : Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
                     
                 Text("編集")
                     .fontWeight(.heavy)
-                    .foregroundColor(Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
+                    .foregroundColor(
+                        selectedTab == 2 ? Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411)
+                        : Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
             }
             .foregroundColor(selectedTab == 2 ? Color.blue : Color.gray)
             .onTapGesture {
@@ -56,10 +64,14 @@ struct TabBarView : View {
             Spacer()
             VStack {
                 Image(systemName: "paperplane")
-                    .foregroundColor(Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
+                    .foregroundColor(
+                        selectedTab == 3 ? Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411)
+                        : Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
                 Text("送る")
                     .fontWeight(.heavy)
-                    .foregroundColor(Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
+                    .foregroundColor(
+                        selectedTab == 3 ? Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411)
+                        : Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666))
             }
             .foregroundColor(selectedTab == 3 ? Color.blue : Color.gray)
             .onTapGesture {
@@ -70,17 +82,10 @@ struct TabBarView : View {
     }
 }
 
-struct PageView : View {
-    var text = ""
-    
-    init(text : String) {
-        self.text = text
-    }
-    
+struct PageHome : View {
     var body: some View {
         VStack {
-            Text(text)
-                .font(.title)
+            Text("ホームページ")
         }
     }
 }
