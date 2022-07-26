@@ -79,13 +79,97 @@ struct TabBarView : View {
             }
             Spacer()
         }
+        .padding(.bottom, 30.0)
     }
 }
 
 struct PageHome : View {
     var body: some View {
         VStack {
-            Text("ホームページ")
+            Image("fv_home")
+                .resizable()
+                .scaledToFit()
+            
+            VStack{
+                HStack {
+                    Image("01")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100, height: 100)
+                    VStack(alignment: .leading) {
+                        Text("1 完全無料で使える")
+                            .foregroundColor(Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411))
+                            .multilineTextAlignment(.trailing)
+                        Text("招待状作成はもちろん名簿作成・受付機能など全ての機能が無料でご利用いただけます。")
+                            .font(.caption)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666)/*@END_MENU_TOKEN@*/)
+                            .multilineTextAlignment(.leading)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    .padding(.bottom, 20.0)
+                    .frame(width: 180.0)
+                }
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("2 豊富なデザイン")
+                            .foregroundColor(Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411))
+                            .multilineTextAlignment(.trailing)
+                            
+                        Text("結婚式・二次会など幅広いシーンでつかえる高品質な デザインを８０種類以上ご用意。")
+                            .font(.caption)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666)/*@END_MENU_TOKEN@*/)
+                            .multilineTextAlignment(.leading)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    
+                    Image("02")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100, height: 100)
+                    .padding(.bottom, 20.0)
+                    .frame(width: 180.0)
+                }
+                HStack {
+                    Image("03")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100, height: 100)
+                    .padding(.bottom, 20.0)
+                    VStack(alignment: .leading) {
+                        Text("3 かんたんゲスト管理")
+                            .foregroundColor(Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411))
+                            .multilineTextAlignment(.trailing)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Text("招待状作成はもちろん名簿作成・受付機能など全ての機能が無料でご利用いただけます。")
+                            .font(.caption)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.26666666666666666, green: 0.26666666666666666, blue: 0.26666666666666666)/*@END_MENU_TOKEN@*/)
+                            .multilineTextAlignment(.leading)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    .padding(.bottom, 20.0)
+                    .frame(width: 180.0)
+                }
+            }
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .background(Color(red: 0.9411764705882353, green: 0.9647058823529412, blue: 0.9647058823529412))
+            Text("デザインを選んで\nパーティ＆ホストの情報を入力するだけ！\nさっそく作ってみる♡")
+                .font(.caption2)
+                .foregroundColor(Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411))
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
+            
+            HStack {
+                Button("LINEで招待状を送る") {
+                    
+                }
+                .padding(.vertical, 10.0)
+                .frame(maxWidth: .infinity)
+                .font(.body)
+                .border(Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411), width: 1)
+                .foregroundColor(Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411))
+                .padding(.top, 10.0)
+                .padding(.bottom, 50.0)
+            }
         }
     }
 }
