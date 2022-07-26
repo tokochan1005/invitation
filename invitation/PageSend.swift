@@ -27,9 +27,9 @@ struct PageSend: View {
                 .multilineTextAlignment(.center)
                 .padding(.top, 30.0)
             TextEditor(text: .constant("この度6月26日に●●●●●&●●●●●の挙式・披露宴を開催いたします。 当日の詳細をWeb招待状にてご案内致しますので、お手数ではございますが下記URLより内容をご確認いただき、ご出席賜りますよう宜しくお願い致します。 https://wedding-invi.jp/s/6KV39bqG?openExternalBrowser=1"))
-                .frame(height: 150.0)
+                .frame(height: 130.0)
                 .border(Color.gray, width: 1)
-                .font(.subheadline)
+                .font(.footnote)
             Button("LINEで招待状を送る") {
                 
             }
@@ -50,7 +50,7 @@ struct PageSend: View {
                 .frame(height: 40.0)
                 .border(Color.gray, width: 1)
             Button("URLをコピーする") {
-                
+                print("コピーしました")
             }
             .padding(.vertical, 10.0)
             .frame(maxWidth: .infinity)
@@ -61,8 +61,6 @@ struct PageSend: View {
             .padding(.bottom, 50.0)
             Divider()
                 .padding(.horizontal, -20.0)
-            
-            
         }
         .padding(.horizontal, 20.0)
     }
