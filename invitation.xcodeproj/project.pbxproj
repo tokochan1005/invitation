@@ -16,6 +16,7 @@
 		60B253C5288D8E6B004AAF74 /* invitationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B253C4288D8E6B004AAF74 /* invitationUITestsLaunchTests.swift */; };
 		6522E981288E63FF002D5404 /* PageEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522E980288E63FF002D5404 /* PageEdit.swift */; };
 		6522E983288E650F002D5404 /* PageSend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522E982288E650F002D5404 /* PageSend.swift */; };
+		6522E991288FFD18002D5404 /* PagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522E990288FFD18002D5404 /* PagePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		60B253C4288D8E6B004AAF74 /* invitationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invitationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6522E980288E63FF002D5404 /* PageEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageEdit.swift; sourceTree = "<group>"; };
 		6522E982288E650F002D5404 /* PageSend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSend.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 0; };
+		6522E990288FFD18002D5404 /* PagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				60B253A7288D8E68004AAF74 /* invitationApp.swift */,
+				6522E990288FFD18002D5404 /* PagePreview.swift */,
 				60B253A9288D8E68004AAF74 /* ContentView.swift */,
 				6522E980288E63FF002D5404 /* PageEdit.swift */,
 				6522E982288E650F002D5404 /* PageSend.swift */,
@@ -266,6 +269,7 @@
 				6522E983288E650F002D5404 /* PageSend.swift in Sources */,
 				60B253AA288D8E68004AAF74 /* ContentView.swift in Sources */,
 				60B253A8288D8E68004AAF74 /* invitationApp.swift in Sources */,
+				6522E991288FFD18002D5404 /* PagePreview.swift in Sources */,
 				6522E981288E63FF002D5404 /* PageEdit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

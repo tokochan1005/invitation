@@ -164,10 +164,10 @@ struct PageHome : View {
                 .padding(.vertical, 10.0)
                 .frame(maxWidth: .infinity)
                 .font(.body)
-                .border(Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411), width: 1)
-                .foregroundColor(Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411))
+                .background(Color(red: 0.2980392156862745, green: 0.7176470588235294, blue: 0.7647058823529411))
+                .foregroundColor(Color(hue: 0.517, saturation: 0.0, brightness: 1.0))
                 .padding(.top, 10.0)
-                .padding(.bottom, 50.0)
+                .padding([.leading, .bottom, .trailing], 50.0)
             }
         }
     }

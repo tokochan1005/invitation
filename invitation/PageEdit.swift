@@ -23,6 +23,12 @@ struct PageEdit: View {
                 Image("fv2")
                     .resizable()
                     .frame(width: 320, height: 521)
+                    .overlay(
+                        Image("preview")
+                            .resizable()
+                            .frame(width: 100, height: 30)
+                            .position(x: 257, y: 32)
+                    )
                 Group {
                     HStack {
                         Text("メインイメージ")
