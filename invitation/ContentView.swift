@@ -85,12 +85,11 @@ struct TabBarView : View {
 
 struct PageHome : View {
     var body: some View {
-        VStack {
-            Image("fv_home")
-                .resizable()
-                .scaledToFit()
-            
+        ScrollView(.vertical) {
             VStack{
+                Image("fv_home")
+                    .resizable()
+                    .frame(width: 375, height: 262)
                 HStack {
                     Image("01")
                         .resizable()
