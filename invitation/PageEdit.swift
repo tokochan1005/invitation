@@ -20,12 +20,16 @@ struct PageEdit: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack {
+                Image("fv2")
+                    .resizable()
+                    .frame(width: 320, height: 521)
                 Group {
                     HStack {
                         Text("メインイメージ")
                             .font(.custom("Hiragino Sans", size: 16))
                             .multilineTextAlignment(.leading)
                             .padding(.leading, 9.0)
+                            .padding(.top, 20.0)
                         Spacer()
                     }
                     Image("HogeHoge")
